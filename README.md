@@ -57,3 +57,39 @@
 2. В модели Book я сделал связь Many-to-Many для авторов , поэтому на создании передается список id авторов
 
 
+
+
+
+
+
+### Развертывание проекта
+
+-  Скопировать проект  
+   ```bash
+   git clone https://github.com/y0gurt-dv/WIS-Software-test-project.git
+   ```
+- Установка зависимостей
+   ```bash
+   pip install -r requirements.txt
+   ```
+- Создать файл .env
+- Вынести константы в .env
+   ```
+   DB_NAME=
+   DB_USER=
+   DB_PASSWORD=
+   DB_HOST=
+   DB_PORT=
+   ```
+- Запуск миграций
+   ```bash
+   alembic upgrade head
+   ```
+- Запуск проекта
+   ```bash
+   python main.py
+   ```
+
+
+
+
