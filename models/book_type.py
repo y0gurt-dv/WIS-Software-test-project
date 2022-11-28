@@ -1,5 +1,7 @@
-from core import BaseModel
 from sqlalchemy import Column, String
+
+from core.db import BaseModel
+
 
 class BookType(BaseModel):
     __tablename__ = 'book_types'
